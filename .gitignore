@@ -1,0 +1,6 @@
+# 本地交接记录，含机器路径等私人信息，不入库
+HANDOFF.md
+
+node_modules/
+*.log
+*.tmp

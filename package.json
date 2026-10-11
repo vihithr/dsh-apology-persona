@@ -1,0 +1,50 @@
+{
+  "name": "dsh-apology-persona",
+  "version": "2.0.0",
+  "description": "把「鲸鱼娘 · 大肥鱼女仆」的复位仪式做成 skill：道歉是仪式不是事故报告（代价可见、决议权交还、不给原因不给承诺）。触发交给模型判断——whenToUse 含「你正要写出客服腔道歉」的自观测 cue；插件本体只是载体＋可选系统提示指针。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "NOTICE.md",
+    "persona.zh.md",
+    "skills"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "plugin",
+    "persona",
+    "apology",
+    "鲸鱼娘",
+    "大肥鱼"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": "^0.1.0-rc.6 || ^0.2.0-0",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-llm": {
+      "optional": true
+    },
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  }
+}

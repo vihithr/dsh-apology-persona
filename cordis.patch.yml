@@ -1,0 +1,15 @@
+# dsh-apology-persona 自带的 bundle patch。
+#
+# 只有把本包写进 profile 的 package.json → dsh.profile.bundles 时，这个文件才会被
+# 当作 bundle 层应用。若你是直接往 profile 的 cordis.patch.yml 里插一行
+# （install.ps1 的默认做法），本文件不参与组合，也不会重复挂载。
+#
+# v2.0.0：插件不再有触发路径（正则检测已删，见 README「触发器之死」）。
+# 挂载它的唯一作用是可选的系统提示指针；skill 本身走文件系统，与挂载无关。
+- insert:
+    - id: dsh-apology-persona
+      name: 'dsh-apology-persona'
+      config:
+        enabled: true
+        # 观察到 skill 目录级线索漏触发时，再改成 true。默认关。
+        systemPointer: false
