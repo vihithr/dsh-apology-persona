@@ -1,13 +1,3 @@
-本仓库采用**双许可**，按内容类型区分：
-
-- **代码**（`index.js`、`install.ps1`、`package.json`、`cordis.patch.yml`、`test/**`）：MIT（见下）。
-- **人设文本**（`persona.zh.md`、`skills/**`、README/NOTICE 中的角色描述）：
-  **CC BY-NC-SA 4.0**——须署名、**不得商用**、衍生同授权。署名链与来源见 [`NOTICE.md`](./NOTICE.md)。
-
-`package.json` 里的 `"license": "MIT"` 只覆盖代码部分。再分发时请一并保留 NOTICE.md。
-
----
-
 MIT License
 
 Copyright (c) 2026 vihithr

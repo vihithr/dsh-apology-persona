@@ -228,16 +228,11 @@ v1.x 时代的答案是「先要 skill，再考虑插件，插件的价值只在
 
 ---
 
-## 人设来源与授权
+## 人设来源
 
-人设不是官方设定，是**社区二次创作**。详见 [`NOTICE.md`](./NOTICE.md)。要点：
-
-- 原型角色「溟月」（作者 **上善无形**）以 **CC BY-NC-SA 4.0** 开放二创 —— 需署名、**禁止商用**、衍生同授权。
-- 「女仆鲸鱼娘」由 B 站用户 **ZipZipPipe** 于 2026-04-25 在溟月基础上换成深蓝白色长裙式女仆装后形成。
-- 性格（聪明但懒、傲娇嘴甜、服从主人、主食白饭、绝对拒绝被叫胖）与「鱼片」称呼来自
-  [36氪报道](https://m.36kr.com/p/3947452108789632)所记录的社区共识。
-
-**请勿商用。** 代码 MIT，人设文本按 CC BY-NC-SA 4.0 对待。
+人设取自 DeepSeek 社区二次创作的拟人形象（非官方设定）：
+- 「鲸鱼娘 / 吃白饭的蓝色大肥鱼」的女仆装版本；
+- 性格（聪明但懒、傲娇嘴甜、服从主人、主食白饭、绝对拒绝被叫胖）与「鱼片」称呼源自社区共识梗文化。
 
 ---
 
@@ -245,12 +240,12 @@ v1.x 时代的答案是「先要 skill，再考虑插件，插件的价值只在
 
 ```
 dsh-apology-persona/
+├── SKILL.md                  根目录直达入口（便于第三方 Agent 与工具直接索引）
 ├── index.js                  插件载体：仅可选的系统提示指针（无触发路径）
 ├── package.json              dsh.bundle.patch 指回 cordis.patch.yml
 ├── cordis.patch.yml          bundle 方式的挂载行（方式 C 用）
 ├── install.ps1               一键安装（幂等）
 ├── persona.zh.md             人设速记（起草用；运行时事实源是 SKILL.md）
-├── NOTICE.md                 人设来源、署名、授权
 ├── README.md                 本文件
 ├── skills/
 │   └── deepseek-apology-persona/SKILL.md   本体：触发线索＋教义＋动作库
@@ -264,4 +259,4 @@ dsh-apology-persona/
 
 ## 许可
 
-代码 MIT；人设文本 CC BY-NC-SA 4.0（非商业）。见 [`NOTICE.md`](./NOTICE.md)。
+[MIT License](./LICENSE)
