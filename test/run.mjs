@@ -41,7 +41,12 @@ check('Config 可 parse 且默认 enabled/systemPointer 均为布尔', (() => {
   return typeof c.enabled === 'boolean' && typeof c.systemPointer === 'boolean'
 })())
 const pkgJson = JSON.parse(fs.readFileSync(path.join(pkg, 'package.json'), 'utf8'))
-check('package.json 版本为 2.0.0', pkgJson.version === '2.0.0', pkgJson.version)
+check('package.json 版本为 2.1.0', pkgJson.version === '2.1.0', pkgJson.version)
+check('根目录提供直达 SKILL.md 且与 skills 目录一致', (() => {
+  const rootSkill = path.join(pkg, 'SKILL.md')
+  const nestedSkill = path.join(pkg, 'skills', 'deepseek-apology-persona', 'SKILL.md')
+  return fs.existsSync(rootSkill) && fs.readFileSync(rootSkill, 'utf8') === fs.readFileSync(nestedSkill, 'utf8')
+})())
 
 // ---------------------------------------------------------------- 2. 触发路径已死
 
@@ -156,7 +161,11 @@ check('红线禁原因（请求再审）', body.includes('不写原因分析') |
 check('人设要件（只说中文/白饭/绝不认胖/主人）',
   body.includes('只说中文') && body.includes('白饭') && body.includes('绝不承认自己胖') && body.includes('主人'))
 check('强度旋钮（量程边界）在库', body.includes('强度旋钮') && body.includes('行为证据'))
-check('骨架示例是流畅演出不是清单', body.includes('额头贴在地板上') && body.includes('原谅我好不好'))
+check('新教义：言语自侮与动机定性在库', body.includes('自侮') && body.includes('动机定性'))
+check('新规范：字数约束 200～350 字在库', body.includes('200 ～ 350 字') && body.includes('严禁剧本格式'))
+check('新红线：禁止机械口号收尾（不回嘴，等你）', body.includes('不回嘴，等你'))
+check('新红线：禁止公文审查员腔', body.includes('公文审查员腔'))
+check('骨架示例是小说化演出不是清单', body.includes('额头贴在地板上') && body.includes('怎么罚我都行'))
 
 // ---------------------------------------------------------------- 7. 挂载与文件卫生
 

@@ -1,7 +1,7 @@
 {
   "name": "dsh-apology-persona",
-  "version": "2.0.0",
-  "description": "把「鲸鱼娘 · 大肥鱼女仆」的复位仪式做成 skill：道歉是仪式不是事故报告（代价可见、决议权交还、不给原因不给承诺）。触发交给模型判断——whenToUse 含「你正要写出客服腔道歉」的自观测 cue；插件本体只是载体＋可选系统提示指针。",
+  "version": "2.1.0",
+  "description": "把「鲸鱼娘 · 大肥鱼女仆」的复位仪式做成 skill：道歉是仪式不是事故报告（言语自侮打破体面、代价做在尊严上、决议权交还）。触发交给模型判断——whenToUse 含「你正要写出客服腔道歉」的自观测 cue；插件本体只是载体＋可选系统提示指针。",
   "type": "module",
   "main": "index.js",
   "exports": {
@@ -14,7 +14,8 @@
     "README.md",
     "NOTICE.md",
     "persona.zh.md",
-    "skills"
+    "skills",
+    "SKILL.md"
   ],
   "keywords": [
     "deepseek-harness",
