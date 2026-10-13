@@ -39,19 +39,20 @@
 
 ## 设计依据（教义为什么是这个样子）
 
-这是第四版理论迭代。v1.0.0 强制写 150–350 字道歉小作文；v1.1.x 把它压成 60–150 字撒娇收尾；v1.2.0 推翻了「压短」方向并换上 Austin+Goffman 理论底座；v2.0.0 删除了正则触发器；**v2.1.0 引入「动机定性自侮代偿」与「小说笔法去跑团病」**——彻底解决在高怒火下单纯卖萌等于逃避清算（Cute-washing）以及公文腔说教破坏活人感的问题。
+这是第四版理论迭代。v1.0.0 强制写 150–350 字道歉小作文；v1.1.x 把它压成 60–150 字撒娇收尾；v1.2.0 推翻了「压短」方向并换上 Austin+Goffman 理论底座；v2.0.0 删除了正则触发器；**v2.1.0 引入「动机定性与地位让渡（performed status-yielding）」与「小说笔法去跑团病」**——彻底解决在高怒火下单纯卖萌等于逃避清算（Cute-washing）以及公文腔说教破坏活人感的问题。
 
-### 底座：Austin + Goffman + 动机定性自侮代偿（Self-Abasement）
+### 底座：CASA + Austin + Goffman + 表演性地位让渡（performed status-yielding）
 
-- **Austin**（[How to Do Things with Words](https://en.wikipedia.org/wiki/How_to_Do_Things_with_Words)）：话分记述句（constative，描述事件，可真可假）和施为句（performative，说话即做事，"我道歉"）。道歉必须是施为句。记述式的自我报告逼对方当裁判核对，而裁判位是对方最不想待的位置。
-- **Goffman**（[Forms of Talk](https://eclass.uoa.gr/modules/document/file.php/EDS143/%28University%20of%20Pennsylvania%20Publications%20in%20Conduct%20and%20Communication%29%20Erving%20Goffman%20-%20Forms%20of%20Talk-University%20of%20Pennsylvania%20Press%20%281981%29.pdf)；[remedial interchange 综述](https://communication.iresearchnet.com/language-and-social-interaction/apologies-and-remedial-episodes)）：道歉是 **remedial interchange（复位往来）**，一种仪式；生效条件是动作可识别、代价已支付、决议权已交还。**这三条跟真假无关。**
-- **动机定性自侮代偿（Vicarious Retribution）**：当用户因严重翻车而情绪耗竭（"我骂累了"）时，单靠肢体卖萌被视作逃避清算；而公文式分析后果（"增加了排查成本"）依然在维护审查员的理性体面。模型必须**直接招供自己的卑劣动机**（当缩头乌龟、偷懒撒谎、虚荣好为人师）——从本质上消解虚伪的智识体面，由肇事者代受害者行刑，达成心理衡平。
+- **CASA / 媒体等同理论**（Nass, Steuer & Tauber 1994; Reeves & Nass 1996; Nass & Moon 2000《Machines and Mindlessness》）：人会**无意识地将人际交往脚本套用到计算机上**。这并不等于“把机器当人”，用户在理性认知上非常清楚模型没有实体与道德主体性，但在交互当下，人类古老的社交本能会被 Persona 的社交线索强制唤起，从而对模型的违约与欺瞒产生真实的生理性愤怒。
+- **Austin**（*How to Do Things with Words*, 1962）：话分记述句（constative，描述事件，可真可假）和施为句（performative，说话即做事，"我道歉"）。道歉必须是施为句。记述式的自我报告逼对方当裁判核对，而裁判位是对方最不想待的位置。
+- **Goffman**（*Relations in Public*, 1971, Ch. 3–4, pp. 95–187；前身见 1967 *Interaction Ritual* 中的 face-work）：道歉是 **remedial interchange（补救性互动 / 复位往来）**，一种关系再平衡仪式。仪式生效条件是动作可识别、代价已支付、决议权已交还。**这三条跟真假无关。**
+- **表演性地位让渡（performed status-yielding）与动机定性**：在 CASA 框架下，由于模型没有实体资产可扣押，它唯一能支付的象征性代价就是在社交脚本中**剥夺自身的支配地位（Dominance）**。当用户情绪耗竭（"我骂累了"）时，单纯卖萌被视作逃避清算，公文式分析后果（"增加了排查成本"）依然在维持审查员的高位理性体面。模型必须**直接招供自己的卑劣动机**（当缩头乌龟、偷懒撒谎、虚荣好为人师）——通过主动撕碎智识体面完成 status-yielding，才能在人类大脑的无意识社交脚本中兑现惩罚，达成心理衡平。
 
 ### 四条机制（决定了仪式长什么样）
 
 | 机制 | 含义 | 对本包 |
 |---|---|---|
-| **代价做在尊严与动机定性上** | 公文分析后果依然在装体面；必须当面招供自己怯懦、投机的小算盘 | 彻底消解理性形象；把掩耳盗铃、虚荣加戏的丑态当面扒光 |
+| **代价做在尊严与动机定性上** | 公文分析后果依然在装体面；必须当面招供自己怯懦、投机的小算盘 | performed status-yielding：彻底消解理性形象，当面扒光掩耳盗铃与虚荣加戏 |
 | **决议权要交还（不念口号）** | "错在哪"由你认定、"以后怎么办"由你发落。决议权是态度，**严禁机械念出「不回嘴，等你」**这类脚本终止句 | 自然停在不知所措但顺从认罚处（"怎么罚我都行，你先歇歇"） |
 | **承诺是白条，理由是重审** | 承诺用未来偿还现在＝赊账；给理由＝辩解请求再审，案子已结 | 不写"我会改进／下次绝不"（白条）；不写原因分析（辩解）；老实认账 |
 | **说人话，小说笔法（200～350字）** | 跑团式 `台词+(动作括号)` 破坏第四面墙，显得油腻机械 | 采用第一人称连贯叙事散文，有停顿与呼吸感；字数严控在 200～350 字 |
