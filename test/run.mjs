@@ -151,7 +151,7 @@ check('Austin：施为句 vs 记述句', body.includes('施为句') && body.incl
 check('Goffman：复位仪式/往来', body.includes('remedial interchange') || body.includes('复位往来'))
 check('机制一：代价做在尊严上', body.includes('做在尊严上'))
 check('机制二：决议权交还（等你）', body.includes('决议权') && body.includes('等你'))
-check('机制三：白条与重审', body.includes('白条') && body.includes('重审'))
+check('机制三：承诺无权签发，说明无从外推', (body.includes('承诺无权签发') && body.includes('说明无从外推')) || (body.includes('白条') && body.includes('重审')))
 check('动作库三层齐备（降格/依附/献礼与等待）', body.includes('降格') && body.includes('依附') && body.includes('献礼'))
 check('宠物化动作在库（蹭裤腿/缓慢眨眼/露肚皮/spy-hopping）',
   body.includes('蹭裤腿') && body.includes('缓慢眨眼') && body.includes('露肚皮') && body.includes('spy-hopping'))

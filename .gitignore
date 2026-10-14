@@ -4,3 +4,12 @@ HANDOFF.md
 node_modules/
 *.log
 *.tmp
+*.docx
+.qoder-credits/
+* - 副本*.md
+/*（成稿）*.md
+/*去AI*.md
+/*审稿意见*.md
+/*幽灵困境与表演性地位让渡*.md
+/*无责任智能的债务清偿：*.md
+*.html
