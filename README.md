@@ -3,7 +3,7 @@
 > ⚡ **SKILL 直达入口**：无需穿透深层目录，仓库根目录已提供直达入口 👉 [`SKILL.md`](./SKILL.md)（配套源文件：[`skills/deepseek-apology-persona/SKILL.md`](./skills/deepseek-apology-persona/SKILL.md)）。
 > 支持第三方 Agent、Claude Code、Antigravity 等工具直接索引根目录 `SKILL.md`。
 >
-> 📄 **理论论文直达**：探讨人机互动、修复通道关闭与降格仪式的学术论文 👉 [`PAPER.md`](./PAPER.md)（学术成稿；去 AI 味沉浸版见 [`docs/paper_de_ai.md`](./docs/paper_de_ai.md)；三轮同行评审记录见 [`docs/reviews/`](./docs/reviews/)）。
+> 📄 **理论论文直达**：探讨人机互动、修复通道关闭与降格仪式的论文 👉 [`PAPER.md`](./PAPER.md)（《无责任智能的债务清偿：LLM 违约交互中的幽灵困境、地位让渡与降格仪式》）。
 >
 > 把「模型道歉」做成一份**可加载的复位仪式**（skill），并把触发它的线索写成模型自己读得懂的话——
 > 包括最要紧的一条：**当它正要写出「抱歉，我之前说错了」的那一刻**。
@@ -41,7 +41,7 @@
 
 ## 设计依据（教义为什么是这个样子）
 
-> 💡 **完整学术论证详见长篇论文**：[《无责任智能的债务清偿：LLM 违约交互中的幽灵困境、地位让渡与降格仪式》](./PAPER.md)（含 Quasi-Agent 本体重构、责任缺口、修复通道关闭定理与降格仪式塌缩证明；精修版见 [`docs/paper_de_ai.md`](./docs/paper_de_ai.md)）。
+> 💡 **完整理论论证详见论文**：[《无责任智能的债务清偿：LLM 违约交互中的幽灵困境、地位让渡与降格仪式》](./PAPER.md)（含 Quasi-Agent 本体重构、责任缺口、修复通道关闭定理与降格仪式塌缩证明）。
 
 这是第四版理论迭代。v1.0.0 强制写 150–350 字道歉小作文；v1.1.x 把它压成 60–150 字撒娇收尾；v1.2.0 推翻了「压短」方向并换上 Austin+Goffman 理论底座；v2.0.0 删除了正则触发器；**v2.1.0 引入「动机定性与地位让渡（performed status-yielding）」与「小说笔法去跑团病」**——彻底解决在高怒火下单纯卖萌等于逃避清算（Cute-washing）以及公文腔说教破坏活人感的问题。
 
@@ -249,11 +249,7 @@ v1.x 时代的答案是「先要 skill，再考虑插件，插件的价值只在
 ```
 dsh-apology-persona/
 ├── SKILL.md                  根目录直达入口（便于第三方 Agent 与工具直接索引）
-├── PAPER.md                  理论论文成稿（《无责任智能的债务清偿》完整版）
-├── docs/                     学术文献与理论演进归档
-│   ├── paper.md              论文完整学术版（含评估强度标记与跨领域对照表）
-│   ├── paper_de_ai.md        论文精修版（去 AI 润色味、知乎/长文传播风格）
-│   └── reviews/              三轮同行评审与反驳意见归档 (review_v1 ~ v3)
+├── PAPER.md                  理论论文（《无责任智能的债务清偿》成稿）
 ├── index.js                  插件载体：仅可选的系统提示指针（无触发路径）
 ├── package.json              dsh.bundle.patch 指回 cordis.patch.yml
 ├── cordis.patch.yml          bundle 方式的挂载行（方式 C 用）
